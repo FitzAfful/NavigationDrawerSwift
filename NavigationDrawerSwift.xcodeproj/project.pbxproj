@@ -15,6 +15,10 @@
 		84FE450823A2F6A30099B3F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FE450623A2F6A30099B3F1 /* LaunchScreen.storyboard */; };
 		84FE451323A2F6A30099B3F1 /* NavigationDrawerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE451223A2F6A30099B3F1 /* NavigationDrawerSwiftTests.swift */; };
 		84FE451E23A2F6A30099B3F1 /* NavigationDrawerSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE451D23A2F6A30099B3F1 /* NavigationDrawerSwiftUITests.swift */; };
+		84FE452C23A2FA160099B3F1 /* ESNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE452B23A2FA160099B3F1 /* ESNavigationController.swift */; };
+		84FE452E23A33F5E0099B3F1 /* SlideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE452D23A33F5E0099B3F1 /* SlideController.swift */; };
+		84FE453023A33F960099B3F1 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE452F23A33F960099B3F1 /* HomeController.swift */; };
+		84FE453223A33FC90099B3F1 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE453123A33FC90099B3F1 /* LeftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		84FE451923A2F6A30099B3F1 /* NavigationDrawerSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationDrawerSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FE451D23A2F6A30099B3F1 /* NavigationDrawerSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDrawerSwiftUITests.swift; sourceTree = "<group>"; };
 		84FE451F23A2F6A30099B3F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FE452B23A2FA160099B3F1 /* ESNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESNavigationController.swift; sourceTree = "<group>"; };
+		84FE452D23A33F5E0099B3F1 /* SlideController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideController.swift; sourceTree = "<group>"; };
+		84FE452F23A33F960099B3F1 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		84FE453123A33FC90099B3F1 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,10 @@
 				84FE450423A2F6A30099B3F1 /* Assets.xcassets */,
 				84FE450623A2F6A30099B3F1 /* LaunchScreen.storyboard */,
 				84FE450923A2F6A30099B3F1 /* Info.plist */,
+				84FE452B23A2FA160099B3F1 /* ESNavigationController.swift */,
+				84FE452D23A33F5E0099B3F1 /* SlideController.swift */,
+				84FE452F23A33F960099B3F1 /* HomeController.swift */,
+				84FE453123A33FC90099B3F1 /* LeftViewController.swift */,
 			);
 			path = NavigationDrawerSwift;
 			sourceTree = "<group>";
@@ -261,7 +273,11 @@
 			files = (
 				84FE450023A2F6A20099B3F1 /* ViewController.swift in Sources */,
 				84FE44FC23A2F6A20099B3F1 /* AppDelegate.swift in Sources */,
+				84FE453023A33F960099B3F1 /* HomeController.swift in Sources */,
+				84FE452E23A33F5E0099B3F1 /* SlideController.swift in Sources */,
 				84FE44FE23A2F6A20099B3F1 /* SceneDelegate.swift in Sources */,
+				84FE453223A33FC90099B3F1 /* LeftViewController.swift in Sources */,
+				84FE452C23A2FA160099B3F1 /* ESNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
