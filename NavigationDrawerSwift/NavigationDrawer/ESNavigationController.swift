@@ -24,7 +24,7 @@ class ESNavigationController: UINavigationController, UIGestureRecognizerDelegat
     private var leftMenuSet: Bool = false
     private var leftEnabled: Bool = true
     private var leftWidth: CGFloat = 250
-    private var leftRevealType: RevealType = .SlideUnder
+    private var leftRevealType: RevealType = .SlideOver
     private var leftAnimationSpeed: CGFloat = 0.3
     private var leftShadowEnabled: Bool = true
     private var leftPanningEnabled: Bool = true
@@ -161,9 +161,9 @@ class ESNavigationController: UINavigationController, UIGestureRecognizerDelegat
 
         self.getMenuView(menu: menu).translatesAutoresizingMaskIntoConstraints = false
         if (menu == .LeftMenu) {
-            self.lefttrailingConstraint = NSLayoutConstraint(item: self.leftMenuViewController.view, attribute: .trailing, relatedBy: .equal, toItem: self.view.window!, attribute: .leading, multiplier: 1, constant: 0)
+            self.lefttrailingConstraint = NSLayoutConstraint(item: self.leftMenuViewController.view!, attribute: .trailing, relatedBy: .equal, toItem: self.view.window!, attribute: .leading, multiplier: 1, constant: 0)
         } else {
-            self.rightleadingConstraint = NSLayoutConstraint(item: self.rightMenuViewController.view, attribute: .leading, relatedBy: .equal, toItem: self.view.window!, attribute: .trailing, multiplier: 1, constant:  0)
+            self.rightleadingConstraint = NSLayoutConstraint(item: self.rightMenuViewController.view!, attribute: .leading, relatedBy: .equal, toItem: self.view.window!, attribute: .trailing, multiplier: 1, constant:  0)
         }
         let widthConstraint = NSLayoutConstraint(item: self.getMenuView(menu: menu), attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: self.getMenuWidth(menu: menu));
         let topConstraint = NSLayoutConstraint(item: self.getMenuView(menu: menu), attribute: .top, relatedBy: .equal, toItem: self.view.window!, attribute: .top, multiplier: 1, constant: 0)

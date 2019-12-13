@@ -21,7 +21,7 @@ class LeftMenuViewController: UIViewController, MenuDelegate, UITableViewDataSou
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 2
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -30,8 +30,10 @@ class LeftMenuViewController: UIViewController, MenuDelegate, UITableViewDataSou
         let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableCell")
 
         switch indexPath.item {
-            case 0: cell?.textLabel!.text = "Menu"
-            default: cell?.textLabel!.text = "Item \(indexPath.item+1)"
+            case 0: cell?.textLabel!.text = "Home"
+            case 1: cell?.textLabel!.text = "Second Controller"
+        default:
+            break
         }
         return cell!
     }
@@ -45,9 +47,9 @@ class LeftMenuViewController: UIViewController, MenuDelegate, UITableViewDataSou
 
         // get the new view controller
         switch indexPath.item {
-        case 1: viewController = storyboard.instantiateViewController(withIdentifier: "SampleView2")
-        case 2: viewController = storyboard.instantiateViewController(withIdentifier: "SampleView3")
-        default: viewController = storyboard.instantiateViewController(withIdentifier: "MainView")
+        case 0: viewController = storyboard.instantiateViewController(withIdentifier: "HomeController")
+        case 1: viewController = storyboard.instantiateViewController(withIdentifier: "SecondController")
+        default: break
         }
 
         // present next view

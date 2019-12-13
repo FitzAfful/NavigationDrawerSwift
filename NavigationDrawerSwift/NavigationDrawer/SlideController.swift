@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SlideNavigationController: ESNavigationController {
+class SlideController: ESNavigationController {
 
     override func viewDidLoad() {
 
@@ -19,15 +19,6 @@ class SlideNavigationController: ESNavigationController {
         if let leftVC = optionalLeftVC {
             self.setupMenuViewController(menu: .LeftMenu, viewController: leftVC)
             if var delegate: MenuDelegate = leftVC as? MenuDelegate{
-                delegate.easySlideNavigationController = self
-            }
-        }
-
-        // set right menu view controllers
-        let optionalRightVC = self.storyboard?.instantiateViewController(withIdentifier: "RightMenu")
-        if let rightVC = optionalRightVC {
-            self.setupMenuViewController(menu: .RightMenu, viewController: rightVC)
-            if var delegate: MenuDelegate = rightVC as? MenuDelegate{
                 delegate.easySlideNavigationController = self
             }
         }

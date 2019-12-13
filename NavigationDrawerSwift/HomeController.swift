@@ -8,12 +8,11 @@
 
 import UIKit
 
-class HomeController: UIViewController {
+class HomeController: BaseSliderController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.addMenuButtons()
     }
-    
+
 }
